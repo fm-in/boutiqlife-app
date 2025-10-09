@@ -29,6 +29,10 @@ export const metadata: Metadata = {
   description: "Discover curated boutique properties and design-driven stays worldwide. For those who never stay ordinary.",
   keywords: ["boutique hotels", "luxury stays", "design hotels", "curated travel", "unique accommodations"],
   authors: [{ name: "BoutiqLife" }],
+  icons: {
+    icon: '/icon.png',
+    apple: '/icon.png',
+  },
   openGraph: {
     title: "BoutiqLife — Where every stay tells a story",
     description: "Discover curated boutique properties and design-driven stays worldwide.",
