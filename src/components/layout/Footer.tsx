@@ -19,7 +19,7 @@ export function Footer() {
               </div>
             </div>
 
-            <h3 className="text-4xl md:text-5xl font-serif text-[#FAF8F4] mb-6 tracking-[-0.01em] font-normal">Stay in the Know</h3>
+            <h2 className="text-4xl md:text-5xl font-serif text-[#FAF8F4] mb-6 tracking-[-0.01em] font-normal">Stay in the Know</h2>
             <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#C5A46D] to-transparent mx-auto mb-8" />
             <p className="text-lg text-[#FAF8F4]/80 mb-12 font-light leading-relaxed tracking-wide">
               Subscribe to receive handpicked properties, travel stories, and exclusive member offers.
@@ -28,6 +28,7 @@ export function Footer() {
               <Input
                 type="email"
                 placeholder="Your email address"
+                aria-label="Email address for newsletter"
                 className="flex-1 bg-[#FAF8F4]/10 border border-[#FAF8F4]/20 text-[#FAF8F4] placeholder:text-[#FAF8F4]/50 focus:border-[#C5A46D] px-6 py-6 text-sm tracking-wide transition-all duration-300"
               />
               <Button className="bg-[#C5A46D] text-[#1E2A24] hover:bg-[#E8DCC5] transition-all duration-500 font-semibold tracking-[0.15em] uppercase px-10 py-6 text-xs hover:scale-105 shadow-lg">
@@ -71,7 +72,7 @@ export function Footer() {
 
           {/* Discover Column */}
           <div>
-            <h4 className="font-serif text-xl mb-6 text-[#FAF8F4]">Discover</h4>
+            <h3 className="font-serif text-xl mb-6 text-[#FAF8F4]">Discover</h3>
             <ul className="space-y-4 text-[#FAF8F4]/80 font-light">
               <li><Link href="/discover" className="hover:text-[#C5A46D] transition-all duration-300 hover:translate-x-1 inline-block">All Properties</Link></li>
               <li><Link href="/discover?vibe=coastal" className="hover:text-[#C5A46D] transition-all duration-300 hover:translate-x-1 inline-block">Coastal Stays</Link></li>
@@ -83,7 +84,7 @@ export function Footer() {
 
           {/* Company Column */}
           <div>
-            <h4 className="font-serif text-xl mb-6 text-[#FAF8F4]">Company</h4>
+            <h3 className="font-serif text-xl mb-6 text-[#FAF8F4]">Company</h3>
             <ul className="space-y-4 text-[#FAF8F4]/80 font-light">
               <li><Link href="/about" className="hover:text-[#C5A46D] transition-all duration-300 hover:translate-x-1 inline-block">About Us</Link></li>
               <li><Link href="/journal" className="hover:text-[#C5A46D] transition-all duration-300 hover:translate-x-1 inline-block">The Journal</Link></li>
@@ -95,7 +96,7 @@ export function Footer() {
 
           {/* Support Column */}
           <div>
-            <h4 className="font-serif text-xl mb-6 text-[#FAF8F4]">Support</h4>
+            <h3 className="font-serif text-xl mb-6 text-[#FAF8F4]">Support</h3>
             <ul className="space-y-4 text-[#FAF8F4]/80 font-light">
               <li><Link href="/faq" className="hover:text-[#C5A46D] transition-all duration-300 hover:translate-x-1 inline-block">FAQ</Link></li>
               <li><Link href="/terms" className="hover:text-[#C5A46D] transition-all duration-300 hover:translate-x-1 inline-block">Terms of Service</Link></li>

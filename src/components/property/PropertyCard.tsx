@@ -17,6 +17,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
             src={property.images[0]}
             alt={property.name}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover transition-all duration-[1200ms] group-hover:scale-110"
           />
 

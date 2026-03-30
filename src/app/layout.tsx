@@ -33,11 +33,23 @@ export const metadata: Metadata = {
     icon: '/icon.png',
     apple: '/icon.png',
   },
+  metadataBase: new URL("https://boutiqlife.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "BoutiqLife — Where every stay tells a story",
     description: "Discover curated boutique properties and design-driven stays worldwide.",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/icon.png",
+        width: 1200,
+        height: 630,
+        alt: "BoutiqLife — Where every stay tells a story",
+      },
+    ],
   },
 };
 
@@ -49,6 +61,23 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} ${cormorant.variable}`}>
       <body className="antialiased font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "BoutiqLife",
+              url: "https://boutiqlife.com",
+              logo: "https://boutiqlife.com/icon.png",
+              description: "Discover curated boutique properties and design-driven stays worldwide.",
+              sameAs: [
+                "https://instagram.com/boutiqlife",
+                "https://linkedin.com/company/boutiqlife",
+              ],
+            }),
+          }}
+        />
         {children}
       </body>
     </html>

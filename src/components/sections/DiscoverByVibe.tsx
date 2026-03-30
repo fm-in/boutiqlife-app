@@ -60,6 +60,7 @@ export function DiscoverByVibe() {
                   src={vibe.image}
                   alt={vibe.name}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-all duration-[1200ms] group-hover:scale-110"
                 />
                 {/* Sophisticated Overlay */}

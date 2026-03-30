@@ -39,7 +39,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center space-x-12">
             <Link
               href="/discover"
-              className={`text-xs tracking-[0.12em] uppercase font-semibold transition-all duration-300 hover:text-[#C5A46D] relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[1px] after:bg-[#C5A46D] after:transition-all after:duration-300 hover:after:w-full ${
+              className={`text-xs tracking-[0.12em] uppercase font-semibold transition-all duration-300 hover:text-[#C5A46D] relative py-3 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#C5A46D] after:transition-all after:duration-300 hover:after:w-full ${
                 scrolled ? 'text-[#1E2A24]' : 'text-[#FAF8F4]'
               }`}
             >
@@ -47,7 +47,7 @@ export function Navbar() {
             </Link>
             <Link
               href="/journal"
-              className={`text-xs tracking-[0.12em] uppercase font-semibold transition-all duration-300 hover:text-[#C5A46D] relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[1px] after:bg-[#C5A46D] after:transition-all after:duration-300 hover:after:w-full ${
+              className={`text-xs tracking-[0.12em] uppercase font-semibold transition-all duration-300 hover:text-[#C5A46D] relative py-3 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#C5A46D] after:transition-all after:duration-300 hover:after:w-full ${
                 scrolled ? 'text-[#1E2A24]' : 'text-[#FAF8F4]'
               }`}
             >
@@ -55,7 +55,7 @@ export function Navbar() {
             </Link>
             <Link
               href="/club"
-              className={`text-xs tracking-[0.12em] uppercase font-semibold transition-all duration-300 hover:text-[#C5A46D] relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[1px] after:bg-[#C5A46D] after:transition-all after:duration-300 hover:after:w-full ${
+              className={`text-xs tracking-[0.12em] uppercase font-semibold transition-all duration-300 hover:text-[#C5A46D] relative py-3 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#C5A46D] after:transition-all after:duration-300 hover:after:w-full ${
                 scrolled ? 'text-[#1E2A24]' : 'text-[#FAF8F4]'
               }`}
             >
@@ -63,7 +63,7 @@ export function Navbar() {
             </Link>
             <Link
               href="/contact"
-              className={`text-xs tracking-[0.12em] uppercase font-semibold transition-all duration-300 hover:text-[#C5A46D] relative after:absolute after:bottom-[-6px] after:left-0 after:w-0 after:h-[1px] after:bg-[#C5A46D] after:transition-all after:duration-300 hover:after:w-full ${
+              className={`text-xs tracking-[0.12em] uppercase font-semibold transition-all duration-300 hover:text-[#C5A46D] relative py-3 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#C5A46D] after:transition-all after:duration-300 hover:after:w-full ${
                 scrolled ? 'text-[#1E2A24]' : 'text-[#FAF8F4]'
               }`}
             >
@@ -87,7 +87,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`lg:hidden p-2 transition-all duration-300 hover:scale-110 ${
+            className={`lg:hidden p-3 min-w-[44px] min-h-[44px] flex items-center justify-center transition-all duration-300 hover:scale-110 ${
               scrolled ? 'text-[#1E2A24]' : 'text-[#FAF8F4]'
             }`}
             aria-label="Toggle menu"
